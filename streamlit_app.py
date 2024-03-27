@@ -28,7 +28,7 @@ if st.button("Check VINs"):
             final_url = response.url
 
             if "redirectFromMissingVDP=true" in final_url:
-        headers = {
+            headers = {
             "authority": "cws.gm.com",
             "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7",
             "accept-language": "en-US,en;q=0.9",
@@ -42,7 +42,7 @@ if st.button("Check VINs"):
             "sec-fetch-user": "?1",
             "upgrade-insecure-requests": "1",
             "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36"
-        }
+            }
 
 
                 api_url = f"https://cws.gm.com/vs-cws/vehshop/v2/vehicle?vin={vin}&postalCode=48642&locale=en_US"
